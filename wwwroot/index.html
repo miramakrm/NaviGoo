@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plan your perfect trip with NaviGoo. Discover activities, recommendations, and book trips seamlessly.">
+
+    <title>NaviGoo</title>
+    
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+ 
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
+    <style>
+        .img-fluid.max-width {
+            max-width: 100%;
+        }
+        .carousel-item img {
+            height: 200px; 
+            width: auto; 
+        }
+    
+       
+    </style>
+
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-white">
+        <div class="container d-flex justify-content-between align-items-center ">
+            <div class="logo d-flex align-items-center">
+                <a href="index.html">
+                    <img src="./images/logo.png" alt="NaviGoo Logo" style="height: 70px;">
+                </a>
+               <div class="logo-text" style="font-size: 30px; color: #061341; font-weight:500;">NaviGoo</div>
+            </div>
+            
+            
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item" ><a href="#" class="nav-link active "style="color:#061341">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active " style="color:#061341">Activities</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active "style="color:#061341">Recommendations</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active"style="color:#061341; ">Contact Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active"style="color:#061341">Login</a></li>
+                    <li ><button type="button" class="btn "
+                    style="  background-color: #061341; color:white; border-radius: 15px; ">
+              Sign Up
+            </button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- main Section -->
+    <section class="main text-center py-5" 
+    style="background-image: url('./images/mainbg.png'); 
+           background-size: cover; 
+           background-position: center; 
+           background-attachment: fixed; 
+           overflow: hidden; 
+           height: 100vh;"> 
+    <div class="container" style="color: #061341; text-align: left;">
+        <h1>Plan & Go</h1>
+        <h4>With NaviGoo</h4>
+    </div>
+</section>
+
+<!-- search bar -->
+<div class="container mt-4 mb-3 ">
+    
+  <div class="row align-items-center g-2 shadow p-1 " style="border-radius: 20px; background-color: rgb(224, 229, 240); ">
+
+    <div class="col-md-3">
+      <label for="destination" class="form-label fw-semibold">Destination</label>
+      <input type="text" id="destination" class="form-control" placeholder="Search destination">
+    </div>
+
+    <div class="col-md-2">
+      <label for="check-in" class="form-label fw-semibold">Check In</label>
+      <input type="date" id="check-in" class="form-control">
+    </div>
+
+    <div class="col-md-2">
+      <label for="check-out" class="form-label fw-semibold">Check Out</label>
+      <input type="date" id="check-out" class="form-control">
+    </div>
+
+    <div class="col-md-2">
+      <label for="budget" class="form-label fw-semibold">Budget</label>
+      <input type="text" id="budget" class="form-control" placeholder="--EGP">
+    </div>
+
+    <!-- Search Button -->
+    <div class="col-md-2 d-flex align-items-center mt-5 justify-content: flex-start; " >
+        <button type="button" class="btn btn-light btn-circle" >
+            <i class="fa-solid fa-magnifying-glass-location fa-bounce"></i>
+          </button>
+          
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!-- Activities Section -->
+    <section class="activities py-5 bg-light text-center " style="color:#061341">
+        <div class="container">
+            <h2 class="text-center mb-4">Activities</h2>
+            <div class="row g-4 d-flex justify-items-strech">
+                <div class="col-md-3">
+                    <div class="card text-center shadow-sm h-100" >
+                            <img src="./images/sahara.png" class="img-fluid " alt="Sahara Desert" style="height :200px; object-fit: cover;">
+                            <div class="card-body ">
+                            <h5 class="card-title">Sahara Desert</h5>
+                            <p class="card-text" style="color:#6b76a3 ;">Explore the magic of the Egyptian dunes</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center shadow-sm h-100">
+                            <img src="./images/louvre.png" class="img-fluid " alt="louvre" style="height: 200px; object-fit: cover;">
+                            <div class="card-body ">
+                            <h5 class="card-title">The Savanna</h5>
+                            <p class="card-text" style="color:#6b76a3 ;">Dive into Parisian culture at the iconic Louvre</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center shadow-sm h-100">
+                       
+                            <img src="./images/nairobiii.jpg" class="img-fluid" alt="Nairobi National Park" style="height: 200px; object-fit: cover;">
+                            <div class="card-body ">
+                            <h5 class="card-title">Nairobi National Park</h5>
+                            <p class="card-text" style="color:#6b76a3 ;">Up close and personal with a playful African animals</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center shadow-sm h-100">
+                       
+                            <img src="./images/wisata bromo.jpg" class="img-fluid" alt="Mount Bromo" style="height: 200px; object-fit: cover;">
+                            <div class="card-body ">
+                            <h5 class="card-title">Mount Bromo, Indonesia</h5>
+                            <p class="card-text" style="color:#6b76a3 ;">Experience the breathtaking beauty of Mount Bromo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Trips Section -->
+ <section class="recommended-trips py-5" style="background-color: #EAF6FF;">
+    <div class="container">
+        <h2 class="text-center mb-4" style="color:#061341">Recommended Trips</h2>
+        
+        <!-- Bootstrap Carousel -->
+        <div id="recommendedTripsCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Carousel Inner -->
+            <div class="carousel-inner" id="carouselContent">
+               
+            </div>
+
+            <!-- Controls -->
+            <a href="#recommendedTripsCarousel" class="carousel-control-prev" type="button"  data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#recommendedTripsCarousel" class="carousel-control-next" type="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+
+        
+    </div>
+</section>
+
+  
+<!-- ------------------------------------------------------------------------------------ -->
+ <section>
+    <div class=" administration container">
+        <form id="addRecommendationForm" action="/add-recommendation" method="post" enctype="multipart/form-data" >
+            <!-- Toggle Button -->
+            <button class="admin-button   "type="button" data-bs-toggle="collapse" data-bs-target="#form" 
+                    style="color: white; background-color: #061341; border-radius: 5px; ">Administration</button>
+            
+            <!-- Collapsible Form Section -->
+            <div id="form" novalidate class="collapse">
+                <div class="form-group">
+                    <div class="container mt-2">
+                        <!-- Trip Name Input -->
+                         <label for="RecommendationName">Trip Name:</label>
+                        <input id="RecommendationName" class="form-control" type="text" name="title" placeholder="Enter the Trip name" 
+                               style="border-radius: 10px;"required>
+                               <span id="nameError" class="error"></span>
+                               
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="container mt-2">
+                        <!-- Trip Description Input -->
+                         <label for="RecommendationDescription">Add Description:</label>
+                         <textarea id="RecommendationDesc" class="form-control" name="description" placeholder="Trip Description" style="border-radius: 10px;" required></textarea>
+                         <span id="descriptionError" class="error"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="container mt-2">
+                        <!-- Trip Image Input -->
+                        <label for="RecommendationImage">place image:</label>
+                        <input  id="RecommendationImage" class="form-control" type="file" name="imageUrl" 
+                               style="border-radius: 10px;" required accept="image/*">
+                               <span id="imageError" class="error"></span>
+                    </div>
+                </div>
+              
+                 <div class="form-group">
+                    <div class="container mt-2">
+                        <!-- Trip price Input -->
+                         <label for="RecommendationPrice">Price:</label>
+                        <input  id="RecommendationPrice" class="form-control" type="number" name="price" step="0.01" placeholder="enter the price"
+                               style="border-radius: 10px;">
+                               <span id="priceError" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <div class="container mt-2">
+                            <!-- Trip currency Input -->
+                             <label for="RecommendationCurrency">currency:</label>
+                            <input id="RecommendationCurrency" class="form-control" type="text" name="currency" placeholder="currency value"  
+                                   style="border-radius: 10px; "required>
+                                   <span id="currencyError" class="error"></span>
+                                   
+                        </div>
+                    </div>
+                </div> 
+             
+                    <div class="container mt-2 d-flex justify-content-end">
+                        <!-- Submit Button -->
+                        <button class="btn btn-success" type="submit">Add Trip</button>
+                  
+                </div>
+            </form>
+             <div class="admin container mt-5 mb-5">
+                    <h2>Delete Trip</h2>
+                    <form id="deleteRecommendationForm" method="post" action="/delete-recommendation"  >
+                        <div class="mb-3">
+                            <label for="recommendationSelect" class="form-label">Select Recommendation:</label>
+                            <select class="form-select" id="Idd" name="title">  
+                            </select>
+                        </div>
+                        <div class="container mt-2 d-flex justify-content-end">
+                            <button type="submit" class="btn btn-danger"  method="DELETE" action="/delete-recommendation" >Delete Recommendation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+       
+    
+
+            </section>
+
+
+    <!-- Appraisals Section -->
+    
+    <section class="appraisals py-5 ">
+        <div class="container text-center">
+            <h2 style="font-weight: bold;">Appraisals</h2>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm" style="border-radius: 20px; background-color: rgb(150, 187, 255);">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <i class="fa-solid fa-user fa-2x" ></i>
+                            </div>
+                            <h5 class="card-title fw-bold">
+                                ⭐⭐⭐⭐⭐ "Amazing trip, unforgettable experience!"
+                            </h5>
+                            <p class="card-text">
+                                I had an unforgettable trip to Bali with NaviGoo, enjoying a well-organized mix of adventure 
+                                and relaxation, from beaches to hiking Mount Batur. The team was responsive, the itinerary 
+                                flexible, and the accommodations top-notch.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm" style="border-radius: 20px; background-color: rgb(150, 187, 255);">
+                        <div class="card-body ">
+                            <div class="d-flex justify-content-start align-items-center ">
+                                <i class="fa-solid fa-user fa-2x" ></i>
+                            </div>
+                            <h5 class="card-title fw-bold">
+                                ⭐⭐⭐⭐⭐ "Best travel agency, highly recommend!" 
+                            </h5>
+                            <p class="card-text">
+                                My Santorini trip with NaviGoo was incredible! From stunning sunsets over the caldera to 
+                                exploring charming villages, everything was perfectly planned, with comfortable accommodations 
+                                and a friendly, attentive team.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Adding Reviews -->
+    <div class="container text center" >
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h2>Add Your Experience Review</h2>
+            </div>
+            <div class ="card" style="border-radius: 20px; background-color: rgb(224, 229, 240);">
+                <div class="card-body mt-0">
+                    <form>
+                        <div class="form-group mt-4">
+                            <label for="recom" class="pb-2">Activities You Made</label>
+                            <input type="text" class="form-control" id="recom" placeholder="Enter activity">
+                        </div>
+                        <div class="form-group mt-4">
+                            <label for="recom" class="pb-2">Place Name</label>
+                            <input type="text" class="form-control" id="recom" placeholder="Enter The Place ">
+                        </div>
+                        <div class="form-group mt-4">
+                            <label for="recom" class="pb-2">Image You Took</label>
+                            <input type="file" class="form-control" id="recom" placeholder="Enter Image">
+                        </div>
+                        <div class="form-group mt-4">
+                            <label for="rating">Rate </label><br>
+                            <span class="fa-regular fa-star rating" data-rating="1"></span>
+                            <span class="fa-regular fa-star rating" data-rating="2"></span>
+                            <span class="fa-regular fa-star rating" data-rating="3"></span>
+                            <span class="fa-regular fa-star rating" data-rating="4"></span>
+                            <span class="fa-regular fa-star rating" data-rating="5"></span>
+                            <input type="hidden" name="rating" id="rating-input" value="0">
+                        </div>
+                        <div class="container mt-2 d-flex justify-content-end">
+                            <!-- Submit Button -->
+                            <button class="btn btn-success" type="submit">Add Review</button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+
+    <!-- Footer Section -->
+
+
+
+    <footer class=" py-4">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap " style="background-color:white; border-radius: 5px;">
+            <!-- Logo and Tagline -->
+            <div class="d-flex flex-column align-items-start">
+                
+                    <div class="logo d-flex align-items-center">
+                        <a href="index.html">
+                            <img src="./images/logo.png" alt="NaviGoo Logo" style="height: 50px;">
+                        </a>
+                       <div class="logo-text" style="font-size: 20px; color: #061341; font-weight:bold;">NaviGoo</div>
+                    </div>
+                <p class="mb-0" style="color: #515463; margin-left:20px; font-weight: 500; ">your guide to plan & go</p>
+            </div>
+    
+            <!-- Contact Information -->
+            <div class="d-flex flex-column align-items-start">
+                <h6 class="mb-2" style="font-weight: bold;">Our Info:</h6>
+                <p class="mb-1"><i class="fa-solid fa-phone"></i> Call Us: +202255454</p>
+                <p class="mb-1"><i class="fa-regular fa-envelope"></i> Our Email: navigoo@gmail.com</p>
+                <p class="mb-1"><i class="fa-solid fa-globe"></i> Website: <a href="#" class="text-decoration-none" >www.NaviGoo.com</a></p>
+                <p class="mb-0"><i class="fa-solid fa-location-dot"></i> Visit Us: Egypt, Cairo</p>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div class="d-flex flex-column align-items-start">
+                <h6 class="mb-2">Follow Us:</h6>
+                <div>
+                    <a href="#" class="text-dark me-3"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-dark me-3"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-dark me-3"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="text-dark me-3"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <footer class=" text-white " style=" background-color: #061341;">
+        <div class="container text-center">
+            <p>&copy; 2024 NaviGoo by Mira Makram All rights reserved.</p>
+          
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+ 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="NaviGoo.js"></script>
+    
+</body>
+</html>
